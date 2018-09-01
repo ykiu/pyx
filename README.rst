@@ -4,7 +4,7 @@ pyx
 
 ``pyx`` is a toy static site generator in Python. It takes advantage of Python's with statement to intuitively express HTML documents in Python:
 
-.. code-bblock:: python
+.. code-block:: python
 
     with open('foo.html', 'w') as dest:
         with write_to(dest):
@@ -15,7 +15,9 @@ pyx
                             t(page_name)
 
 would translate into:
+
 .. code-block:: html
+
     <body>
         <ul>
             <li>
