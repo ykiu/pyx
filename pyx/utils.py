@@ -1,5 +1,5 @@
 from contextlib import contextmanager
-from base_element import Element
+from .base_element import Element
 
 def t(text):
     Element.output.write(text)

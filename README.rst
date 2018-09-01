@@ -2,7 +2,7 @@
 pyx
 ***
 
-``pyx`` is a toy static site genetator in Python. It takes advantage of Python's with statement to intuitively express HTML document in Python:
+``pyx`` is a toy static site generator in Python. It takes advantage of Python's with statement to intuitively express HTML documents in Python:
 
 .. code-bblock:: python
 
@@ -35,20 +35,8 @@ Installing
 
 * Install ``pyx`` with ``pip install git+https://github.com/ykiu/pyx.git``.
 
-=====
-Usage
-=====
+=======
+Example
+=======
 
-
-
-
-============
-Contributing
-============
-
-1. Fork the repo and create your branch from master.
-2. Do your work.
-3. Run tests (``setup.py test``). Dependencies will be installed into `./.eggs/`. No need to explicitly activate a virtual environment.
-4. Make a PR.
-
-We ask that contributors adhere to `PEP8 <https://www.python.org/dev/peps/pep-0008/>`_ standards, and include full tests for all their code.
+An example would be found in sample_project/index.py.

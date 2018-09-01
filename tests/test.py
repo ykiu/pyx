@@ -1,7 +1,7 @@
 import unittest
 import io
-from contextlib import contextmanager
-from .. import *
+
+from pyx import *
 
 class SimpleTestCase(unittest.TestCase):
   def test_basics(self):

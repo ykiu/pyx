@@ -1,0 +1,24 @@
+<html><head><title>pyx sample</title><style>* {box-sizing: border-box;}</style></head><body style="margin: 0px;"><nav style="float: left; padding: 20px; width: 200px;"><ul style="list-style: none; padding: 0px;"><li style="padding: 10px 0px;">Home</li><li style="padding: 10px 0px;">About</li></ul></nav><div style="float: left; width: calc(100% - 200px); padding: 20px; max-width: 900px;"><main><h1>Welcome to pyx</h1><p>
+pyx is a toy static site generator in Python.
+It takes advantage of Python's with statement
+to intuitively express HTML documents in Python:
+</p><code><pre style="background-color: #ccc; padding: 20px; border-radius: 3px;">
+with open('foo.html', 'w') as dest:
+    with write_to(dest):
+        with body():
+            with ul():
+                for text in ['foo', 'bar']:
+                    with li():
+                        t(text)
+</pre></code><p>would translate into:</p><code><pre style="background-color: #ccc; padding: 20px; border-radius: 3px;">
+&lt;body&gt;
+    &lt;ul&gt;
+        &lt;li&gt;
+            foo
+        &lt;/li&gt;
+        &lt;li&gt;
+            bar
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+</pre></code></main><footer style="width: 100%; text-align: center;font-size: 80%; color: #999; padding: 40px 10px;"><p>Generated with pyx</p><p>2018/09/01 17:50:44</p></footer></div></body></html>

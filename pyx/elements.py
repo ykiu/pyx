@@ -1,4 +1,4 @@
-from base_element import Element
+from .base_element import Element
 
 class a(Element):
     pass
@@ -111,7 +111,7 @@ class dfn(Element):
 class dialog(Element):
     pass
 
-class dir_(Element):
+class dir(Element):
     pass
 
 class div(Element):
@@ -201,7 +201,7 @@ class image(Element):
 class img(Element):
     pass
 
-class input_(Element):
+class input(Element):
     pass
 
 class ins(Element):
@@ -234,7 +234,7 @@ class listing(Element):
 class main(Element):
     pass
 
-class map_(Element):
+class map(Element):
     pass
 
 class mark(Element):
@@ -276,7 +276,7 @@ class noframes(Element):
 class noscript(Element):
     pass
 
-class object_(Element):
+class object(Element):
     pass
 
 class ol(Element):

@@ -6,12 +6,13 @@ https://github.com/pypa/sampleproject
 """
 
 from setuptools import setup, find_packages
+from build_elements import BuildElements
 
 setup(
     name='pyx',
 
     # getting version info from git tags
-    use_scm_version = True,
+    use_scm_version=True,
     # (the dependencies will be installed into ./.eggs/)
     setup_requires=['setuptools_scm'],
 
@@ -27,9 +28,12 @@ setup(
     tests_require=[],
     test_suite='tests',
 
+    # extra commands
+    cmdclass={'buildelements': BuildElements},
+
     # meta data
     author='Yusuke Kiuchi',
-    description='Toy static site genetator in Python',
+    description='Toy static site generator in Python',
     long_description=open('README.rst').read(),
     url='https://github.com/ykiu/pyx/',
     classifiers=[
